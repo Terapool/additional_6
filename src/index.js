@@ -30,6 +30,9 @@ for (var i = 0; i < multiArray.length; i++ ) {
     if (multiArray[i]%5==0 && multiArray[i]%10 != 0) {
         countFives++;
     }
+      if (multiArray[i]%50==0) {
+        countFives++;
+    }
 }
 result = countTens;
 if (countOdds < countFives) {result = result + countOdds} else {result = result + countFives};
